@@ -1,9 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-  
     box-sizing: border-box;
-  
     font-family: "Baloo Bhai 2", cursive;
   }
   nav {
@@ -21,11 +19,11 @@
     z-index: 9999;
     overflow: hidden;
   }
-  /* #navbar{
+  #navbar{
   position:fixed;
   top:0;
   left:0;
-  } */
+  }
   
   ul {
     display: flex;

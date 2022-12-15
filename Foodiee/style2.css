@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Baloo Bhai 2", cursive;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  
+    background-color: #be2525;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    overflow: hidden;
+  }
+  #navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        text-align: center;
+        color: #fff;
+        gap: 2rem;
+        position: fixed;
+        right: 0;
+        padding-right: 15px;
+      }
+ nav a {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        background-color: rgb(22, 22, 94);
+        border-radius: 10px;
+        padding: 10px;
+      }

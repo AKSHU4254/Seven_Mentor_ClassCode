@@ -17,15 +17,18 @@
     min-height: 8vh;
     background-color: teal;
     font-family: "montserrat" ,sans-serif;
+    
  }
  .nav-links {
     display: flex;
     justify-content: space-around;
     width: 30%;
+    
  }
 
  .nav-links li{
     list-style: none;
+    
  }
  
  .heading{
@@ -44,7 +47,9 @@
 }
 .nav-links li a:hover:not(active){
     background-color: lightgreen;
+    padding: 15px;
 }
 .nav-links li a.active{
     background-color: #4caf50;
+    padding: 12px;
 }

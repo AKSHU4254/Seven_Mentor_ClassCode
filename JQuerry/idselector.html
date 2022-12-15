@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Using ID</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   
+   <script>
+    $(Document).ready(function(){
+        $("button").click(function(){
+            $("#p1").hide();
+        });
+    });
+    $(Document).ready(function(){
+        $("#btn1").click(function(){
+            $("p").hide();
+        });
+    });
+    $(Document).ready(function(){
+        $("#btn2").click(function(){
+            $("p").show();
+        });
+    });
+    $(Document).ready(function(){
+        $("#btn3").click(function(){
+            $("p").toggle();
+        });
+    });
+    </script> 
+</head>
+<body>
+    <h2>Akshay Ashok Bauskar</h2>
+
+    <p>Gangapur Road Sawarkar Nagar</p>
+    <p id="p1">Nashik Basketball Association</p>
+    <button>Click Me</button>
+    <button id="btn1">hide</button>
+    <button id="btn2">Show</button>
+    <button id="btn3">Hide/Show</button>
+    
+</body>
+</html>
