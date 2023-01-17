@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#t1").on("keyup",function() {
+                var value = $(this).val().toLowerCase();
+                $("#list li").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value)> -1)
+                });
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <input id="t1" type="search" placeholder="Search...">
+    <br>
+    <ul id="list">
+        <li>First Item</li>
+        <li>Secound Item</li>
+        <li>Third Item</li>
+        <li>Fourth Item</li>
+    </ul>
+    
+</body>
+</html>

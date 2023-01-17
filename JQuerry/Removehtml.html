@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        #div1
+        {
+            height: 200px;;
+            width: 300px;
+            border:2px solid grey;
+            background-color: brown;
+        }
+        
+    </style>
+    <script>
+        // Empty Html elements
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#div1").remove();
+            });
+        });
+        // empty html elements
+        $(document).ready(function(){
+            $("#btn2").click(function(){
+                $("#div1").empty();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">
+        <h3>Akshay Ashok Bauskar</h3>
+        <p>Gangapur Road Sawarkar Nagar</p>
+        <p>Collage Road</p>
+    </div>
+    <br>
+    <button id="btn1">Remove Div Element</button>
+    <button id="btn2">Empty Div Element</button>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        // Simple Animation
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("img").animate({left: '300px'});
+            });
+        });
+        // multile properties
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         $("img").animate({
+        //             left: '350px', 
+        //             opacity: '0.5',
+        //             height: '500px',
+        //             width: '500px'
+        //         });
+        //     });
+        // });
+        // Relative Value
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         $("img").animate({
+        //             left: '350px',
+        //             height: '+=150px',
+        //             width: '+=150px'
+        //         });
+        //     });
+        // });
+        // Predefined value like show , hide or toggle
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         $("img").animate({
+        //             height: 'toggle'
+        //         },5000);
+        //     });
+        // });
+        // using queue functionality
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         var div= $("img");
+        //         div.animate({height:'500px', opacity: '0.4'},"slow");
+        //         div.animate({width:'500px', opacity: '0.8'},"slow");
+        //         div.animate({height:'300px', opacity: '0.4'},"slow");
+        //         div.animate({width:'300px', opacity: '0.8'},"slow");
+        //     });
+        // });
+    </script>
+</head>
+<body>
+    <button>Animation</button>
+    <img src="Domi.jpeg" height="200px" width="200px" style="position: absolute;">
+</body>
+</html>

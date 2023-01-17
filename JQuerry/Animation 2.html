@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        // append Method
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("p").append("<b> College Road </b>");
+            });
+
+            $("#btn2").click(function(){
+                $("ol").append("<li>Item 4</li>");
+            });
+        });
+        // Prepend Method
+        $(document).ready(function(){
+            $("#btn3").click(function(){
+                $("p").prepend("<b> Nashik Gangapur</b>")
+            })
+
+            $("#btn4").click(function(){
+                $("ol").prepend("<li>Item 0</li>");
+            });
+        });
+        // Insert before and after
+        $(document).ready(function(){
+            $("#btn5").click(function(){
+                $("img").before("<b>Top</b>");
+            });
+
+            $("#btn6").click(function(){
+                $("img").after("<i>offers</i>");
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <p>Akshay Ashok Bauskar</p>
+    <p>Gangapur Road Sawarkar Nagar</p>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <img src="Domi.jpeg" height="300px" width="300px"><br><br>
+    <button id="btn1">Append Text</button>
+    <button id="btn2">Append list Item</button><br><br>
+    <button id="btn3">Prepend Text</button>
+    <button id="btn4">Prepend List Item</button><br><br>
+    <button id="btn5">Insert Before</button>
+    <button id="btn6">Insert after</button><br><br>
+</body>
+</html>

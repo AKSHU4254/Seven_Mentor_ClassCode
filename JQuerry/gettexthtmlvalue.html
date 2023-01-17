@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        // get text and html
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                alert("Text: " + $("#para").text());
+            });
+            $("#btn2").click(function(){
+                alert("HTML: " + $("#para").html());
+            });
+        });
+        // get value
+        $(document).ready(function(){
+            $("#btn3").click(function(){
+                alert("value: " + $("#ch1").val());
+            });
+        });
+        // get attribute
+        $(document).ready(function(){
+            $("#btn4").click(function(){
+                alert($("#img1").attr("src"));
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="para">Lorem ipsum dolor sit amet <b>consectetur adipisicing elit.</b> Ut atque explicabo dolores laborum quod accusamus,<i>facilis odio totam</i> porro fuga illum voluptate, et doloremque cupiditate, voluptatem iste facere labore quos!</p>
+    <img src="Domi.jpeg" height="200px" width="200px" id="img1"><br>
+    <input type="checkbox" id="ch1" value="Accept Information">accept<br><br>
+    <button id="btn1">Show Text</button>
+    <button id="btn2">Show Html</button>
+    <button id="btn3">Show Value</button>
+    <button id="btn4">Show Attribute Value</button>
+</body>
+</html>
